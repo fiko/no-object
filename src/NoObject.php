@@ -9,7 +9,7 @@
  * is why this repo was created, to resolve that problem.
  *
  * @package No Object
- * @author Fiko Borizqy <fiko@dr.com>
+ * @author Fiko Borizqy <hi@fiko.me>
  * @license MIT
  * @license https://choosealicense.com/licenses/mit/
  * @see https://github.com/fikoborizqy/object
@@ -38,12 +38,10 @@ class NoObject extends stdClass
      */
     public function __construct(Array $array = [])
     {
-        foreach($array as $key => $val) {
+        foreach ($array as $key => $val) {
             $this->$key = $val;
         }
     }
-
-
 
     /**
      * Controls if calling undefined method. If undefined mehod called, then
@@ -54,14 +52,12 @@ class NoObject extends stdClass
      */
     public function __call($method, $params = [])
     {
-        if(method_exists($this, $method)) {
+        if (method_exists($this, $method)) {
             return call_user_func_array([$this, $method], $params);
         } else {
             return NULL;
         }
     }
-
-
 
     /**
      * Controls if calling undefined property. If undefined
