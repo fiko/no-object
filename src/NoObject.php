@@ -12,10 +12,10 @@
  * @author Fiko Borizqy <hi@fiko.me>
  * @license MIT
  * @license https://choosealicense.com/licenses/mit/
- * @see https://github.com/fikoborizqy/object
+ * @see https://github.com/fiko/no-object
  */
 
-namespace Borizqy\NoObject;
+namespace Fiko\NoObject;
 
 use stdClass;
 
