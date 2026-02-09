@@ -4,7 +4,7 @@
 require_once(__DIR__ . "/../autoload.php");
 
 // using No Object class
-use Borizqy\NoObject\NoObject;
+use Fiko\NoObject\NoObject;
 
 // example of an array that will be load as an no object
 $array_example = [
