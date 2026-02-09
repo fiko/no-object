@@ -9,6 +9,26 @@ that is why this repo was created, to resolve that problem.
 
 ## How to Use?
 
+### Composer
+
+```php
+use Fiko\NoObject\NoObject;
+
+$data = new NoObject([
+    "first" => "The first array value.",
+    "last"  => "The last array value."
+]);
+
+// print all object properties
+print_r($data);
+
+// Example of calling undefined property
+echo $data->wrong;
+
+// Example of calling defined property
+echo $data->first;
+```
+
 ### Via Composer
 
 Please see `example/composer.php` example
