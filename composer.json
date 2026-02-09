@@ -1,5 +1,5 @@
 {
-    "name": "fikoborizqy/noobject",
+    "name": "fiko/no-object",
     "description": "Not Only Object will return NULL instead of error for undefined property.",
     "type": "library",
     "require": {
